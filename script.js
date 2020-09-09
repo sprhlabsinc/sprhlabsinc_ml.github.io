@@ -37,7 +37,10 @@ cocoSsd.load().then(function (loadedModel) {
     model = loadedModel;
     modelHasLoaded = true;
     // Show demo section now model is ready to use.
-    demosSection.classList.remove('invisible');
+    //demosSection.classList.remove('invisible');
+    var x = document.getElementById("gif");
+    x.style.display = "none";
+
 });
 
 
