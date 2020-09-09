@@ -133,7 +133,15 @@ function predictWebcam() {
                     //     alert(result);
                     //     }})
 
-                    window.open('https://maker.ifttt.com/trigger/mask_detected/with/key/b2AiYiZeiIrrzjeP2IHw1_','_alex');
+                  //  window.open('https://maker.ifttt.com/trigger/mask_detected/with/key/b2AiYiZeiIrrzjeP2IHw1_','_alex');
+                    $.ajax({
+                        url: 'main.php',
+                       // dataType: 'jsonp',
+                        success: function(rs){
+                          alert(rs)
+                        }
+                    });
+
                  // let url="https://maker.ifttt.com/trigger/ifttt_trigger/with/key/cxaeSyLK8I6melODOFBO3f";
                  //    httpPost(
                  //        url,
