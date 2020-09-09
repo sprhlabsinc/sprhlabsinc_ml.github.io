@@ -135,8 +135,8 @@ function predictWebcam() {
 
                   //  window.open('https://maker.ifttt.com/trigger/mask_detected/with/key/b2AiYiZeiIrrzjeP2IHw1_','_alex');
                     $.ajax({
-                        url: 'main.php',
-                       // dataType: 'jsonp',
+                        url: 'https://maker.ifttt.com/trigger/mask_detected/with/key/b2AiYiZeiIrrzjeP2IHw1_',
+                        dataType: 'jsonp',
                         success: function(rs){
                           alert(rs)
                         }
